@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="map.js" defer></script>
+</head>
+
+<body>
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor-blur"></div>
+
+    <div class="section1">
+        <div class="one container">
+            <div class="header">
+                <h2><img src="./images/DebrisWatchLogo.png" style="max-width: 100px;" alt=""></h2>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected"><i class="fa-solid fa-bars"></i></span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="dropmenu">
+                        <li><a href="./" class="menu-link">Home</a></li>
+                        <li><a href="./slider_blur-main/menu.html" class="menu-link">Menu List</a></li>
+                        <li><a href="./Events.html">Tracker(under dev)</a></li>
+                        <li><a href="./Locations.html">DebriSnare(under dev)</a></li>
+                        <li><a href="#section7" class="contact-link">Contact Us(under dev)</a></li>
+                    </ul>
+                </div>
+                <!-- <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> -->
+            </div>
+
+            <div class="text-content">
+                <div class="head">
+                    <h1><u>DEBRIS WATCH</u></h1>
+                    <h2><span>Real-Time Tracking </span>for <span>Orbital Safety</span></h2>
+                    <br>
+                    <p>
+                        A Space Debris Tracker
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <video src="./videos/EarthDebris.mp4" muted autoplay loop defaultPlaybackRate="0.2" id="earthVid"></video>
+    </div>
+
+    <div class="section2">
+        <!-- <video src="./videos/Chaar Diwaari - Thehra (Official Video) ｜ Pyaar Diwaari Arc 1 ｜ Def Jam India (online-video-cutter.com).mp4" loop autoplay id="thehra"></video> -->
+        <video src="./videos/DEBRIS WATCH Promo Video Ideathon [DPS MRD].mp4" loop autoplay id="thehra"></video>
+    </div>
+
+    <div class="section3">
+        <div class="three container">
+            <div class="left">
+                <!-- <video src="./videos/mic.webm" muted loop autoplay style="scale: 0.5;"></video> -->
+                <h3 class="team">Our Team</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="imgBx imgBx1">
+                        </div>
+                            <div class="content">
+                                <span class="price">
+                                    <a href="*">Vidit Mathur</a>
+                                </span>
+                                <span class="des">
+                                    <p>Space Debris Researcher</p>
+                                </span>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBx imgBx2">
+                        </div>
+                            <div class="content">
+                                <span class="price">
+                                    <a href="*">Vivaan Moda</a>
+                                </span>
+                                <span class="des">
+                                    <p>Presentation Designer</p>
+                                </span>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBx imgBx3">
+                        </div>
+                            <div class="content">
+                                <span class="price">
+                                    <a href="*">Vedant Mathur</a>
+                                </span>
+                                <span class="des">
+                                    <p>Developer</p>
+                                </span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <h3>About Us</h3>
+
+                <h1>At The Debris Watcher, we focus on tracking real-time space debris to help users monitor orbital hazards with precision. Our platform delivers up-to-date information on debris locations, providing a reliable tool for understanding and addressing the growing challenge of space debris in Earth's orbit.
+                </h1>
+
+                <!-- <h1> Discover our diverse expertise,<br>
+                    each one providing a unique<br>
+                    dimension to your vision.
+                </h1> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section4">
+        <div class="four">
+            <!-- <div class="services">
+                <h5>Design</h5>
+            </div> -->
+
+            <div class="moving-text">
+                <div class="text">
+                    <div class="first">
+                        <h1>Monitoring Space Debris for a Safer Tomorrow!</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                    <div class="first">
+                        <h1>Monitoring Space Debris for a Safer Tomorrow!</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                    <div class="first">
+                        <h1>Monitoring Space Debris for a Safer Tomorrow!</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                    <div class="first">
+                        <h1>Monitoring Space Debris for a Safer Tomorrow!</h1>
+                        <video src="./videos/LOGOVIDEO.webm" muted autoplay loop></video>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- =========projects====== -->
+
+
+            <div class="projects">
+                
+                <div class="bg">
+                    <section id="tracking">
+                        <h1 style="color: #fff;">Tracking Dashboard</h1>
+                        <div id="map" style="height: 500px;"></div>
+                        <h1 style="color: #fff;">Current number of tracked objects: <span id="trackedCount">0</span></h1>
+                    </section>
+                    <!-- <img src="./images/SittingArea.jpg" class="id-1"></img>
+                    <img src="./images/OutsideBar2 (1).jpg" class="id-2"></img>
+                    <img src="./images/17 (1) (1).png" class="id-3" style="margin-top: -14vh; object-fit: fill; scale: 0.79;"></img> -->
+                </div>
+
+                <!-- <div class="first-project container">
+                    <div class="first" data-id="1">
+                        <h1>Sitting Area</h1>
+
+                        <div class="about">
+                            <h4>UI/UX Design</h4>
+                            <h4>Bradnding</h4>
+                            <h4>Motion</h4>
+                        </div>
+                    </div>
+
+                    <div class="first" data-id="2">
+                        <h1>Garden Area with Stage</h1>
+
+                        <div class="about">
+                            <h4>UI/UX Design</h4>
+                            <h4>Bradnding</h4>
+                            <h4>Motion</h4>
+                        </div>
+                    </div>
+                    <div class="first" data-id="3">
+                        <h1>Bar Area</h1>
+
+                        <div class="about">
+                            <h4>UI/UX Design</h4>
+                            <h4>Bradnding</h4>
+                            <h4>Motion</h4>
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section5" style="margin-bottom: 5%;">
+        <div class="five container">
+            <div class="left">
+                <h3 style="margin-top: 20%;">Our Solution: <b>The DebriSnare</b></h3>
+                <div class="one" style="top: -10%;">
+                    <h1>
+                        DebriSnare are advanced robots built to collect up to 150 kg of space debris and return it to Earth. Constructed from sustainable materials, they self-decompose if they malfunction, preventing further debris accumulation. Their design promotes a cleaner orbital environment.
+                    </h1>
+                </div>
+            </div>
+
+            <div class="right">
+                <img class="sideimg" src="./images/model.jpg" style="scale: 0.9; margin-top: 30%;"></img>
+                <img class="sideimg" src="./images/modelblender.jpg" style="scale: 0.5; margin-top: -20%;"></img>
+            </div>
+        </div>
+    </div>
+
+
+   
+    <div class="section6">
+        <div class="six">
+            <div class="left">
+                <div class="move">
+                    <h1><span>Join us </span>for <span>real-time tracking and clearing</span> of space debris.</h1>
+                    <!-- <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google"></i> -->
+                    <h2><img src="./images/LogoBG.png" style="border-radius: 100%; max-width: 70px; margin: 8px;" alt=""></h2>
+                </div>
+
+                <div class="move">
+                    <h1><span>Join us </span>for <span>real-time tracking and clearing</span> of space debris.</h1>
+                    <!-- <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google"></i> -->
+                    <h2><img src="./images/LogoBG.png" style="border-radius: 100%; max-width: 70px; margin: 8px;" alt=""></h2>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section3" style="margin-top: -20%;">
+        <div class="three container">
+            <div class="left">
+                <img class="sideimg" src="./images/contactus1-removebg-preview.png" style="scale: 1;"></img>
+            </div>
+            <div class="right">
+                <!-- <h3><b>Contact Us</b></h3> -->
+
+                <!-- <h1>Diwaari Bistro blends urban vibrancy with cultural sophistication, inspired by Indian street art and hip-hop. Its bold decor and subtle lighting create a unique dining experience, merging music's rhythm with Indian aesthetics.
+                </h1> -->
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="/submit_contact" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- <h1> Discover our diverse expertise,<br>
+                    each one providing a unique<br>
+                    dimension to your vision.
+                </h1> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section7" id="section7">
+        <div class="seven">
+            <h4><span style="font-weight: bolder; color: #000;">&copy; 2024 Space Debris Tracker. All rights reserved.</span></h4>
+
+            <div class="follow">
+                <div class="box">
+
+                    <h1>Instagram</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                            <h3>* Instagram * <span>@DebrisWatch</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>Facebook</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                            <h3>* Facebook * <span>@DebrisWatch</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>X/Twitter</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                            <h3>* X/Twitter * <span>@DebrisWatch</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>Discord</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                            <h3>* Discord * <span>@DebrisWatch</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>LinkedIn</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                            <h3>* LinkedIn * <span>@DebrisWatch</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h1>Skype</h1>
+
+                    <div class="back">
+                        <div class="insta">
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                            <h3>* Skype * <span>@DebrisWatch</span></h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // import Shery from "sheryjs"; /*Don't use if using CDN*/
+        // Shery.imageEffect(".sideimg", {
+        //     style: 1 /*OR 5 for different variant */,
+        //     debug: true,
+        // });
+    </script>
+    <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

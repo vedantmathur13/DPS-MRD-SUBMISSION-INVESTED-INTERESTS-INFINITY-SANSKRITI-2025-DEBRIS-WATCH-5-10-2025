@@ -212,7 +212,7 @@
 }
 
 .card .imgBx2{
-    background: url(Pranav.jpg);
+    background: url(PC.jpg);
     background-size: cover;
     background-position:center;
 }
@@ -1205,6 +1205,7 @@
   .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--primary);
   }
+
 
 
 

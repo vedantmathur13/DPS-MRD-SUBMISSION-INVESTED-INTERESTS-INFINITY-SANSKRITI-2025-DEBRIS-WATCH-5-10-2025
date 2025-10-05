@@ -206,19 +206,19 @@
 }
 
 .card .imgBx1{
-    background: url(./images/Vidit.jpg);
+    background: url(./images/Vid.jpg);
     background-size: cover;
     background-position:center;
 }
 
 .card .imgBx2{
-    background: url(./images/Vedant.jpg);
+    background: url(./images/Viv.jpg);
     background-size: cover;
     background-position:center;
 }
 
 .card .imgBx3{
-    background: url(./images/Pranav.jpg);
+    background: url(./images/Ved.jpg);
     background-size: cover;
     background-position:center;
 }
@@ -1205,4 +1205,5 @@
   .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--primary);
   }
+
 
